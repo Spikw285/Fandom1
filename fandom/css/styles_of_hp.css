@@ -19,44 +19,44 @@ header {
     color: #fff;
     padding: 10px 20px;
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center;
     text-shadow: 0 0 8px #000;
 }
 
 header img {
     left: 100px;
-    height: 100px; /* Adjust height as needed */
-    margin-left: 110px; /* Space between logo and text */
+    height: 100px;
+    margin-left: 110px;
 }
 
 main {
     padding: 20px;
-    flex: 1; /* Expands main content to fill remaining height */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
+    align-items: center;
+    justify-content: center;
 }
 
 .content-wrapper {
     width: 85%;
-    max-width: 1200px; /* Optional: Limit maximum width */
-    background-color: rgba(0, 0, 0, 0.9); /* Увеличена непрозрачность */
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.9);
     padding: 20px;
-    border-radius: 10px; /* Optional: Rounded corners */
+    border-radius: 10px;
 }
 
 section {
-    max-width: 100%; /* Use 100% of the width of the content-wrapper */
-    margin: 20px 0; /* Space between sections */
+    max-width: 100%;
+    margin: 20px 0;
 }
 
 #about, #characters {
-    text-align: center; /* Center text inside each section */
+    text-align: center;
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent background for better text readability */
+    background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -72,12 +72,12 @@ footer {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center;
     gap: 20px;
 }
 
 .character-list li {
-    display: flex; /* Flex to center image and name */
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -147,7 +147,7 @@ input[type="checkbox"] {
 
 /* Down arrow symbol */
 .toggle-button::before {
-    content: '\25BC'; /* Down arrow (▼) */
+    content: '\25BC';
     display: inline-block;
     transition: transform 0.3s ease;
 }
@@ -155,13 +155,13 @@ input[type="checkbox"] {
 /* Arrow rotation when opening list */
 #toggleCharacters:checked + label::before,
 #toggleAbout:checked + label::before {
-    transform: rotate(180deg); /* Arrow up rotation */
+    transform: rotate(180deg);
 }
 
 /* Hide and show content with checkbox */
 #toggleCharacters:checked + label + ul,
 #toggleAbout:checked + label + div {
-    max-height: 500px; /* Set a larger height to reveal content */
+    max-height: 500px;
     opacity: 1;
     padding: 20px 0;
 }
@@ -183,17 +183,17 @@ input[type="checkbox"] {
 .contact-info, .mini-game {
     margin: 20px 0;
     padding: 20px;
-    background-color: rgba(17, 17, 17, 0.9); /* Чуть более непрозрачный фон */
+    background-color: rgba(17, 17, 17, 0.9);
     border: 1px solid #0f0;
     border-radius: 10px;
-    box-shadow: 0 0 8px #0f0; /* Добавлено зеленое свечение */
+    box-shadow: 0 0 8px #0f0;
 }
 
 /* Rating section */
 .rating {
     margin: 20px 0;
     padding: 20px;
-    border-radius: 10px; /* Remove border */
+    border-radius: 10px;
     text-align: center;
 }
 
@@ -205,7 +205,7 @@ input[type="checkbox"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    direction: rtl; /* Right to left for star fill effect */
+    direction: rtl;
 }
 
 .star-rating input {

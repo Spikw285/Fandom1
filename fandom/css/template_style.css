@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    position: relative; /* Ensure relative positioning for the body */
+    position: relative;
 }
 
 body {
@@ -151,7 +151,7 @@ footer {
     margin-bottom: 15px;
     border-left: 2px solid #0f0;
     padding-left: 15px;
-    color: #fff; /* White text */
-    text-shadow: 0 0 8px #0f0; /* Green glowing text */
+    color: #fff;
+    text-shadow: 0 0 8px #0f0;
     background-color: rgba(0, 255, 0, 0.1);
 }

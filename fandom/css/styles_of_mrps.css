@@ -55,8 +55,8 @@ main {
 
 .search-container {
     position: absolute;
-    top: 10px;
-    right: 50px;
+    top: 40px;
+    right: 400px;
     display: flex;
     align-items: center;
     z-index: 1;
@@ -86,8 +86,8 @@ main {
 
 .edit-icon {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 40px;
+    right: 365px;
     width: 24px;
     height: 24px;
     cursor: pointer;
@@ -112,7 +112,7 @@ main {
 
 .sidebar img {
     max-width: 100%; !important
-    max-height: 100%; !important
+    max-height: 200px;important
     object-fit: contain; !important
     box-sizing: border-box; !important
 }
@@ -137,29 +137,6 @@ main {
     background-color: rgba(0, 0, 0, 0.8); !important
 }
 
-
-.click-me {
-    font-family: 'Patrick Hand', cursive;
-    font-size: 24px;
-    color: #f00;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid #f00;
-    border-radius: 5px;
-    background: linear-gradient(145deg, #600 0%, #900 100%);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-decoration: none;
-    z-index: 2;
-}
-
-.click-me:hover {
-    transform: scale(1.1);
-}
 
 footer {
     background-color: rgba(0, 0, 0, 0.9);
