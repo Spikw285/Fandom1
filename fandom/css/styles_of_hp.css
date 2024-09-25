@@ -131,7 +131,6 @@ input[type="checkbox"] {
 
 /* Toggle button for checkboxes */
 .toggle-button {
-    display: inline-block;
     margin-left: 10px;
     padding: 5px 10px;
     background-color: transparent;
