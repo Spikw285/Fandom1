@@ -165,7 +165,7 @@ footer {
 }
 @font-face {
     font-family: 'wingding';
-    src: url("../wingding.ttf") format("truetype");
+    src: url("../css/wingding.ttf") format("truetype");
 }
 .glitch{
     position: absolute;
