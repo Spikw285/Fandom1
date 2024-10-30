@@ -1,0 +1,231 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://plus.unsplash.com/premium_photo-1673688152102-b24caa6e8725?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWF0cml4fGVufDB8fDB8fHww') no-repeat center center fixed;
+    background-size: cover;
+    color: #0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    left: 100px;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-shadow: 0 0 8px #000;
+}
+
+header img {
+    left: 100px;
+    height: 100px;
+    margin-left: 110px;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-wrapper {
+    width: 85%;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+section {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+#about, #characters {
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #0f0;
+    box-shadow: 0 0 8px #000;
+    text-shadow: 0 0 8px #0f0;
+    width: 100%;
+}
+
+/* Character list styles */
+.character-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.character-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-list a {
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #0f0;
+    background-color: #222;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.character-list img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.character-list .name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #0f0;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.character-list a:hover .name {
+    transform: translateY(0);
+}
+
+.character-list a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #0f0;
+}
+
+/* Hidden checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Toggle button for checkboxes */
+.toggle-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #0f0;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Down arrow symbol */
+.toggle-button::before {
+    content: '\25BC';
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Arrow rotation when opening list */
+#toggleCharacters:checked + label::before,
+#toggleAbout:checked + label::before {
+    transform: rotate(180deg);
+}
+
+/* Hide and show content with checkbox */
+#toggleCharacters:checked + label + ul,
+#toggleAbout:checked + label + div {
+    max-height: 500px;
+    opacity: 1;
+    padding: 20px 0;
+}
+
+/* Default hidden content */
+.character-list,
+.about-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.3s ease;
+}
+
+.about-content {
+    padding: 0;
+}
+
+/* Mini-game block */
+.contact-info, .mini-game {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(17, 17, 17, 0.9);
+    border: 1px solid #0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #0f0;
+}
+
+/* Rating section */
+.rating {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.rating h3 {
+    margin-top: 0;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    color: #444;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Fill all stars up to the selected one */
+.star-rating input:checked ~ label,
+.star-rating input:checked ~ input ~ label {
+    color: #0f0;
+}
+
+/* Handle hover effect */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #0f0;
+}
